@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+#calculator {
+  border: 1px solid red;
+  display: grid;
+  grid-template-areas:
+  "dislay display display display"
+  "clear negative percentage divide"
+  "seven eight nine multiply"
+  "four five six subtract"
+  "one two three add"
+  "zero zero decimal equals";
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 20px;
+  padding: 10px 50px 50px 50px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #000;
+}
+
+#display {
+  color: #fff;
+}
+
+.divs{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 75px;
+  font-size: 18px;
+  border: 1px solid #161616;
+  cursor: pointer;
+  user-select: none;
+}
+
+#answer {
+  font-size: 40px;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+}
+
+#expression {
+  font-size: 30px;
+  height: 30px;
+  width: 100%;
+  color: #fff;
+}
+
+
+#display {
+  text-align: right;
+  grid-area: display;
+}
+
+#clear{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: clear;
+}
+
+
+#negative{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: negative;
+}
+
+
+#percentage{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: percentage;
+}
+
+
+#divide{
+  background-color:rgb(10, 10, 129);
+  color: rgb(164, 195, 252);
+  grid-area: divide;
+}
+
+#seven{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: seven;
+}
+
+
+#eight{
+  grid-area: eight;
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+}
+
+
+#nine{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: nine;
+}
+
+
+#multiply{
+  background-color:rgb(10, 10, 129);
+  color: rgb(164, 195, 252);
+  grid-area: multiply;
+}
+
+
+#four{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: four;
+}
+
+
+#five{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: five;
+}
+
+#six{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: six;
+}
+
+#subtract{
+  background-color:rgb(10, 10, 129);
+  color: rgb(164, 195, 252);
+  grid-area: subtract;
+}
+
+#one{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: one;
+}
+
+#two{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: two;
+}
+
+#three{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);;
+  grid-area: three;
+}
+
+#add{
+  background-color:rgb(10, 10, 129);
+  color: rgb(164, 195, 252);
+  grid-area: add;
+}
+
+#zero{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: zero;
+}
+
+#decimal{
+  background-color:  #333333;
+  color:rgb(131, 172, 248);
+  grid-area: decimal;
+}
+
+#equals{
+  background-color:rgb(10, 10, 129);
+  color: rgb(164, 195, 252);
+  grid-area: equals;
+}
+
+#clear:hover, #negative:hover, #percentage:hover, #seven:hover, #eight:hover, #nine:hover, #four:hover, #five:hover, #six:hover, #one:hover, #two:hover, #three:hover, #zero:hover, #decimal:hover{
+  background-color: #424242;
+}
+
+#divide:hover, #multiply:hover, #subtract:hover, #add:hover, #equals:hover{
+  background-color: rgb(13,13,149);
+}
